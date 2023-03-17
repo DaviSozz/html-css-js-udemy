@@ -9,6 +9,7 @@ body {
     height: 500px;
     background-position: right center;
     background-size: cover;
+    border-top: 1px solid transparent;
 }
 
 .hero-content {
@@ -21,6 +22,32 @@ body {
     text-transform: uppercase;
     font-size: 3em;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.541);
+}
+.principal nav ul {
+    text-align: right;
+    margin: 20px 50px 0px 0px;
+}
+
+.principal nav li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+
+.principal nav a {
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+    font-size:0.9em;
+    letter-spacing: 2px;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.principal nav a:hover {
+    background-color:  rgba(0, 0, 0, 0.459); ;
 }
 
 
