@@ -23,6 +23,14 @@ body {
     font-size: 3em;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.541);
 }
+
+.hero-content p {
+    background-color: rgba(0, 0, 0, 0.349);
+    display: inline-block;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
 .principal nav ul {
     text-align: right;
     margin: 20px 50px 0px 0px;
@@ -58,10 +66,23 @@ main {
 
 .content-section {
     background-color:white ;
-    padding: 15px;
+    padding: 10px;
     margin-top: 15px;
+    overflow: auto;
 }
 
+.card {
+    width:32% ;
+    float: left;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-1, .card-2 {
+    margin-left: 2%;
+}
 article > h2 {
     color: black;
     background-color: rgba(192, 192, 192, 0.473);
