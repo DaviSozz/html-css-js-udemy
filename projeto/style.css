@@ -66,8 +66,8 @@ main {
 
 .content-section {
     background-color:white ;
-    padding: 10px;
-    margin-top: 15px;
+    padding: 15px;
+    margin-top: 10px;
     overflow: auto;
 }
 
@@ -76,13 +76,23 @@ main {
     float: left;
 }
 
+.card p {
+    background-color: rgba(53, 52, 52, 0.61);
+    color: white;
+    padding: 15px;
+    margin: 0px;
+    
+}
+
+
 .card img {
     width: 100%;
 }
 
-.card-1, .card-2 {
-    margin-left: 2%;
+.card-1, .card-2, .card-3{
+    margin-left: 1%;
 }
+
 article > h2 {
     color: black;
     background-color: rgba(192, 192, 192, 0.473);
