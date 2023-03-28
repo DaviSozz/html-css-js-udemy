@@ -1,0 +1,21 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: darkgray;
+}
+
+.principal {
+    background-image: url(../imagens/topo.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+header > nav > ul > li > a {
+    color: gray;
+    background-color: blue;
+    ;
+}
