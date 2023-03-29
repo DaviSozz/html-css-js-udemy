@@ -11,11 +11,70 @@ body {
 .principal {
     background-image: url(../imagens/topo.jpg);
     height: 500px;
+    background-position: top right;
+    background-size: cover;
+}
+
+.principal ul {
+    background-color: rgba(1, 1, 48, 0.507);
+    text-align: right;
+
+
+}
+
+.principal nav ul {
+    background-image: url(../imagens/logo.png);
     background-repeat: no-repeat;
+    background-position: center top;
+    height: 100px;
+    
 }
 
 header > nav > ul > li > a {
-    color: gray;
-    background-color: blue;
-    ;
+    color: white;
+    text-decoration: none;    
+   
+}
+
+.principal nav li {
+    display: inline-block;
+    margin-left: 10px;
+    border: 2px solid rgba(75, 74, 74, 0.63);
+    
+   
+}
+
+header > nav a {
+    display: block;
+    letter-spacing: 2px;
+   
+}
+
+main h1 {
+    text-decoration: solid;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3em;
+    padding-left: 30px;
+    font-size:larger;
+}
+
+main p {
+    line-height: 1.3em;
+    padding-left: 30px;
+    font-size:larger;
+}
+
+.foto1 {
+    display: inline-block;
+    margin: 10px;
+}
+
+.foto2 {
+    display: inline-block;
+    margin: 10px;
+}
+
+.foto3 {
+    display: inline-block;
+    margin: 10px;
 }
