@@ -1,11 +1,11 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
-    margin: 0px;
+    margin: auto;
 }
 
 body {
-    background-color: darkgray;
+    background-color:rgba(255, 255, 255, 0.575);
 }
 
 .principal {
@@ -47,6 +47,11 @@ header > nav > ul > li > a {
 header > nav a {
     display: block;
     letter-spacing: 2px;
+   
+}
+
+main {
+    margin: auto;
    
 }
 
