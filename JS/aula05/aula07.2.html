@@ -9,7 +9,10 @@
 <body>
     <script>
 
-        function Caneta(preco, cor){
+        var caneta = (function(window){
+            'use strict';
+            cosnole.log(this)
+            window.Caneta = function(preco, cor){
             
             var cor = cor || 'black';
             this.preco = preco || 1;
@@ -25,7 +28,9 @@
         }
     
 
-        var caneta1 = new Caneta(2, 'red')
+             var caneta1 = new Caneta(2, 'red')
+        
+        })(window)
 
     </script>
 </body>
