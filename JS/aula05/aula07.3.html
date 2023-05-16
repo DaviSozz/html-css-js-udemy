@@ -7,6 +7,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+
+        var pessoa1 = {
+            nome: 'davi', 
+            sobrenome: 'souza'
+        };
+        var pessoa2 = {
+            nome: 'catarina', 
+            sobrenome: 'santos'
+        };
+        var pessoa3 = {
+            nome: 'nice', 
+            sobrenome: 'fancisaca'
+        };
+
+        
+        for (var i = 1; i <= 3; i++) {
+            console.log(window["pessoa"+i].nome + ' ' + ["pessoa"+i].sobrenome);
+        }
+
+    </script>
 </body>
 </html>
