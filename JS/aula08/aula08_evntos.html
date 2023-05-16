@@ -11,14 +11,31 @@
     
     <button id="btn1" onclick="clicar()">botao1</button>
     <button id="btn2">botao2</button>
+    <button id="btn3" onclick="alert
+    ('onclick no atributo')">botao3</button>
 
     <script>
 
         var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
 
         btn2.onclick = clicar;
         function clicar(){
             alert('clicou');
+        }
+
+        btn3.addEventListener("click", function() {
+            alert('clicou com dom level 2');
+        })
+        btn3.addEventListener("click", function() {
+            alert('clicou com dom level 2 pela segunda vez');
+        })
+
+        btn.onclick = function (){
+            alert('ola')
+        }
+        btn3.onclick = function(){
+            alert('mundo')
         }
     </script>
 </body>
