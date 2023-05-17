@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>curos javascript completo 2018</h1>
+    
+    <button id="btn1" onclick="clicar()">botao1</button>
+    <button id="btn2">botao2</button>
+    <button id="btn3" onclick="alert
+    ('onclick no atributo')">botao3</button>
+    <div class="container">
+        <h1>propagação de eventos</h1>
+
+        <div id="d1" style="background: red; padding: 25px;">
+            texto dentro da div
+            <span style="background: green;">texto dentro da span</span>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h1>delegação de eventos</h1>
+        <ul>
+            <li>lista 1</li>
+            <li>lista 2</li>
+            <li>lista 3</li>
+        </ul>
+    </div>
+
+    <script>
+
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+
+        btn2.onclick = clicar;
+        function clicar(){
+            alert('clicou');
+        }
+
+        btn3.addEventListener("click", function() {
+            alert('clicou com dom level 2');
+        })
+        btn3.addEventListener("click", function() {
+            alert('clicou com dom level 2 pela segunda vez');
+        })
+
+        btn.onclick = function (){
+            alert('ola')
+        }
+        btn3.onclick = function(){
+            alert('mundo')
+        }
+
+        var d1 = document.querySelector('#d1');
+        var d1Span = docuemnt.querySelector('#d1 span');
+
+        d1.addEventListener('click', function(){
+            console.log('click no $d1');
+        });
+        
+        d1Span.addEventListener('click', function(){
+            console.log('click no $d1Span');
+        });
+        
+        d1Span.addEventListener('click', function(evt){
+            console.log('clicpu no document');
+            console.log(evt.currentTarget); 
+        });
+
+        var $ul = document.querySelector('ul');
+        var $li = document.querySelectorAll('li');
+
+        
+        var x = 0;
+        while($lis[0]){
+            $lis[x].addEventListener('click', function(e){
+                e.stopPorpagation();
+                console.log('clicou na li');
+            })
+            x++;
+        }
+
+        $UL.addEventListener('click', function(e){
+            e.stopPropagation();
+            console.log(this);
+            console.log(e.target);
+            console.log(e.currentTarget);
+            if(e.target.nodeName =="li"){
+                alert('clicou na li');
+            }
+        })
+        
+    </script>
+
+</body>
+</html>
