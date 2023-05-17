@@ -59,8 +59,9 @@
             console.log('click no $d1Span');
         });
         
-        d1Span.addEventListener('click', function(){
+        d1Span.addEventListener('click', function(evt){
             console.log('clicpu no document');
+            console.log(evt.currentTarget); 
         });
     </script>
 </body>
