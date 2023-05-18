@@ -15,20 +15,22 @@
            <label for="txtPass">Senha</label>
            <input type="password" name="Pass" id="txtPass">
            <br>
-           <button type="button" id="btn">Logar</button>
+           <button type="submit" id="btn">Logar</button>
         </form>
     </div>
     <script>
         (function(){
             'use strict'
+            var $form = document.querySelector('form');
             var $txtUser = document.getElementById('txtUser');
             var $txtPass = document.getElementById('txtPass');
             var $btn = document.getElementById('btn');
             
-            $btn.addEventListener('click', function(){
+            $form.addEventListener('submit', function(){
                 alert('clicou no btn');
                 if($txtUser.value === "" || $txtPass.value === ""){
                     alert('Preenhca todos os campos');
+                    e.preventDefault();
                 }
             })
         })
