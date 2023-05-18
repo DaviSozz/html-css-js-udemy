@@ -10,26 +10,24 @@
     <div class="container">
         <h1>curso javascript completo</h1>
         <textarea name="" id="msg" cols="30" rows="10"></textarea>
+        <br>Restam <span id="resta"></span> caracteres 
     </div>
     <script>
         (function(){
             'use strict'
-
+            var maxima = 100;
             var $txtMsg = document.getElementById('msg');
-            $txtMsg.addEventListener('keypress', keypress);
-            $txtMsg.addEventListener('keyup', keyup);
-            $txtMsg.addEventListener('keydown', keydown);
-
-            function keypress(e){
-                console.log('keypress', this.value)
+            var $resta = document.getElementById('resta');
+            $resta.textContent = maxima;
+            $txtMsg.addEventListener('input', checkLength);
+            
+            
+            function checkLength(e){
+                var numeroLetrasDigitadas = this.value.lengt;
+                $resta.textContent = maxima - numeroLetrasDigitadas;
+                
             }
-            function keyup(e){
-                console.log('keyup', this.value)
-            }
-            function keydown(e){
-                console.log('keydown', this.value)
-            }
-       })
+       })()
     </script>
 </body>
 </html>
