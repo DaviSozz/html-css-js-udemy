@@ -28,7 +28,9 @@
            var $btn = document.querySelector('#btn');
            $btn.addEventListener('click', addTask);
            $txtTask.addEventListener('keyup', function(){
-            console.log(e.keycode);
+            if(e,keyCode === 13) {
+                addTask();
+            }
            })
 
         function addTask(){
